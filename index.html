@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Coder Survey</title>
+    <meta name="author" content="Eric Dominguez" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <body>
+      <h1 id="title" class="titles">Coder Survey</h1>
+      <br />
+      <p id="description" class="regular-sized-text">
+        This is a survey to better understand our community, connect, network,
+        and more!
+      </p>
+      <br /><br /><br /><br /><br /><br />
+      <form id="survey-form">
+        <!--WHATS YOUR NAME SECTION -->
+        <div id="whats-your-name">
+          <h1 class="titles">What's Your Name?</h1>
+          <br /><br />
+          <input
+            type="text"
+            placeholder="First Name"
+            id="name name-label"
+            required
+            class="rounded-corners regular-sized-text"
+          /><br /><br />
+          <input
+            type="text"
+            placeholder="Last Name"
+            id="name name-label"
+            required
+            class="rounded-corners regular-sized-text"
+          />
+          <br /><br />
+          <select
+            id="dropdown"
+            required
+            class="rounded-corners regular-sized-text"
+          >
+            <option disabled selected>Title</option>
+            <option>Mr.</option>
+            <option>Mrs.</option>
+            <option>Ms.</option>
+          </select>
+        </div>
+        <br /><br /><br /><br /><br /><br />
+        <!--BASIC INFO SECTION-->
+        <div id="basic-info">
+          <h1 class="titles">Basic Information</h1>
+          <br /><br />
+          <div id="gender-form">
+            <form>
+              <p class="sub-titles">Please select your gender:</p>
+              <br />
+              <input type="radio" />
+              <label class="regular-sized-text">Male</label>
+              <br />
+              <input type="radio" />
+              <label class="regular-sized-text">Female</label>
+              <br />
+              <input type="radio" />
+              <label class="regular-sized-text">Other</label>
+            </form>
+          </div>
+          <div id="race-form">
+            <form>
+              <h1 class="sub-titles">Please select your race:</h1>
+              <br /><br />
+              <input type="checkbox" value="white-race" />
+              <label class="regular-sized-text"
+                >White or European American</label
+              >
+              <br />
+              <input type="checkbox" value="black-race" />
+              <label class="regular-sized-text"
+                >Black or African American
+              </label>
+              <br />
+              <input type="checkbox" value="indian-race" />
+              <label class="regular-sized-text"
+                >American Indian and Alaskan Native</label
+              >
+              <br />
+              <input type="checkbox" value="asian-race" />
+              <label class="regular-sized-text">Asian</label>
+              <br />
+              <input type="checkbox" value="pacific-race" />
+              <label class="regular-sized-text"
+                >Native Hawaiian and Other Pacific Islander.</label
+              >
+              <br />
+              <input type="checkbox" value="other-race" />
+              <label class="regular-sized-text">Two or more</label><br /><br />
+            </form>
+          </div>
+          <div class="clear"></div>
+          <input
+            type="number"
+            placeholder="Age"
+            id="number number-label"
+            min="10"
+            max="99"
+            required
+            class="rounded-corners regular-sized-text"
+          /><br /><br /><br /><br /><br /><br />
+        </div>
+        <br /><br /><br /><br /><br /><br />
+        <!--WORK LIFE SECTION-->
+        <div id="work-life">
+          <h1 class="titles">Work</h1>
+          <br />
+          <form>
+            <p class="sub-titles">What's your current role?</p>
+            <br />
+            <input type="radio" name="current-role" value="male" />
+            <label for="male" class="regular-sized-text"> Student</label
+            ><br /><br /><br />
+            <input type="radio" name="gender" value="female" />
+            <label for="female" class="regular-sized-text"
+              >Full-Time Employement</label
+            ><br /><br /><br />
+            <input type="radio" name="gender" value="other" />
+            <label for="other" class="regular-sized-text"
+              >Unemployed and Not Looking for Employement</label
+            ><br /><br /><br />
+            <input type="radio" name="gender" value="other" />
+            <label for="other" class="regular-sized-text"
+              >Unemployed and Looking for Employement</label
+            ><br /><br /><br /><br />
+          </form>
+          <h2 class="sub-titles">Questions</h2>
+          <br /><br />
+          <textarea class="rounded-corners">
+Where did/are you studying?</textarea
+          >
+          <textarea class="rounded-corners">
+Are you Front End, Back End, or Full Stack?</textarea
+          >
+          <textarea class="rounded-corners">
+Describe your coding journey</textarea
+          >
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <div class="sub-titles">
+            How many years have you been working for?
+          </div>
+          <br /><br />
+          <input
+            type="number"
+            placeholder="Years"
+            id="number number-label"
+            min="0"
+            max="50"
+            required
+            class="rounded-corners regular-sized-text"
+          /><br /><br />
+        </div>
+        <br /><br /><br /><br /><br /><br />
+        <!--END SECTION -->
+        <div id="end">
+          <textarea class="rounded-corners">Any additional comments?</textarea>
+          <br /><br />
+          <input
+            type="email"
+            placeholder="Email"
+            id="email email-label"
+            required
+            class="rounded-corners regular-sized-text"
+          /><br /><br />
+          <select id="dropdown" class="form-basis" required>
+            <br /><br />
+            <option disabled selected value class="rounded-corners">
+              How often would you like us to email you?
+            </option>
+            <option value="#">Once a month (major updates or events)</option>
+            <br /><br />
+            <option value="#">
+              Once a week (emails related to your preferences)
+            </option>
+            <br /><br />
+            <option value="#">
+              Once a day (tips and tricks our team provides)
+            </option>
+            <br /><br />
+            <option value="#">All emails</option>
+            <br /><br />
+          </select>
+          <br /><br />
+        </div>
+        <input type="submit" value="Submit" class="rounded-corners" />
+      </form>
+    </body>
+  </body>
+</html>
